@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // Choisir la version ES6 pour le JavaScript compilé
+    "module": "CommonJS", // Utiliser CommonJS pour les modules
+    "strict": true, // Activer la vérification stricte des types
+    "esModuleInterop": true, // Permet l'importation de modules CommonJS
+    "skipLibCheck": true, // Ignorer les erreurs de type dans les fichiers de librairies
+    "forceConsistentCasingInFileNames": true // Vérifier les majuscules/minuscules dans les noms de fichiers
+  },
+  "include": [
+    "**/*.ts"
+  ], // Inclure tous les fichiers TypeScript du projet
+  "exclude": [
+    "node_modules"
+  ] // Exclure le dossier node_modules
+}

@@ -1,0 +1,38 @@
+{
+  "name": "codenames_playwright",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc && npx playwright install --with-deps && npx pkg codenamesbot.js --targets node18-win-x64,node18-macos-x64,node18-linux-x64 -o codenames-bot"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.9",
+    "pkg": "^5.8.1",
+    "playwright-core": "^1.50.1"
+  },
+  "dependencies": {
+    "@huggingface/inference": "^3.5.1",
+    "axios": "^1.8.1",
+    "dotenv": "^16.4.7",
+    "openai": "^4.86.1",
+    "playwright": "^1.50.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "pkg": {
+    "scripts": "codenamesbot.js",
+    "assets": [
+      "node_modules/playwright-core/lib/**"
+    ],
+    "targets": [
+      "node18-win-x64",
+      "node18-macos-x64",
+      "node18-linux-x64"
+    ]
+  }
+}
